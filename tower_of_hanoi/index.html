@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Tower Of Hanoi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+</head>
+<body>
+<div class="container container-loading">
+  <div class="loading-text">Loading<div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+</div>
+<div class="container container-game">
+  <canvas id="game-canvas"></canvas>
+</div>
+<div class="container container-overlay">
+  <div class="overlay-author">Shahinzeyni</div>
+  <div class="overlay-btn overlay-auto"  paused></div>
+  <img class="overlay-btn overlay-minus" src="./assets/minus-square.svg">
+  <img class="overlay-btn overlay-plus" src="./assets/plus-square.svg">
+</div>
+<div class="container container-modal"></div>
+<template id="modal">
+  <div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-inner">
+      <div class="modal-title">$title$</div>
+      <div class="modal-content">$content$</div>
+    </div>
+  </div>
+</template>
+<script src="./tower_of_hanoi.js" async></script>
+</body>
+</html>
